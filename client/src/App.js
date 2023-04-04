@@ -1,4 +1,5 @@
 import './App.css';
+import React, {useEffect, useState} from 'react'
 import {Footer, Blog, Possibility, Features, WhatGPT3, Header} from './containers'
 import {CTA, Brand, Navbar} from './components'
 const App = () => {
