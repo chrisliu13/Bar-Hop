@@ -1,0 +1,33 @@
+.barhop__navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 6rem;
+}
+
+.barhop__navbar-links{
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.barhop__navbar-links-logo{
+    margin-right: 2rem;
+}
+
+.barhop__navbar-links-logo img{
+    width: 62.56px;
+    height: 16.02px;
+}
+
+.barhop__navbar-links_container{
+    display:flex;
+}
+
+.barhop__navbar-links_container p, .barhop__navbar-menu_container p{
+    color: #fff;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+}
