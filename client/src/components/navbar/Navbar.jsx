@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import './navbar.css';
 import {RiMenu3Line, RiCloseLine} from 'react-icons/ri';
-import logo from '../../assets/logo.svg'
+import newbarhoplogo from '../../assets/newbarhoplogo.PNG'
 const Menu = () =>(
   <>
     <p><a href = "#home"> Home</a></p>
@@ -17,9 +17,9 @@ const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
   return (
     <div className = 'barhop__navbar'>
-      <div className = 'barhop__navbar-links'>
+      <div className = 'barhop__navbar-links'> 
         <div className = 'barhop__navbar-links-logo'>
-          <img src = {logo} alt = "logo"/>
+          <img src = {newbarhoplogo} alt = "logo"/>
         </div>
         <div className = "barhop__navbar-links_container">
           <Menu/>
