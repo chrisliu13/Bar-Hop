@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import './navbar.css';
 import {RiMenu3Line, RiCloseLine} from 'react-icons/ri';
-import newbarhoplogo from '../../assets/newbarhoplogo.PNG'
+import officiallogo from '../../assets/officiallogo.png'
 const Menu = () =>(
   <>
     <p><a href = "#home"> Home</a></p>
@@ -19,7 +19,7 @@ const Navbar = () => {
     <div className = 'barhop__navbar'>
       <div className = 'barhop__navbar-links'> 
         <div className = 'barhop__navbar-links-logo'>
-          <img src = {newbarhoplogo} alt = "logo"/>
+          <img src = {officiallogo} alt = "logo"/>
         </div>
         <div className = "barhop__navbar-links_container">
           <Menu/>

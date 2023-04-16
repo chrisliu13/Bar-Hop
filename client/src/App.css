@@ -37,6 +37,14 @@ a{
     /* global 92%+ browsers support */
     background:radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
 }
+/*header background image*/
+.background__img{
+    background-image: url('assets/headerbackground.jpg');
+    background-repeat: none;
+    background-size: auto;
+    background-position: center 255px;
+    
+}
    
    
 .gradient__text{
