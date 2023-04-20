@@ -24,6 +24,7 @@
 
 .bh__functionality-feature{
     display: flex;
+    
 }
 .bh__functionality-feature .bh__feature-container__feature{
     margin: 0;
@@ -58,12 +59,24 @@
     .bh__functionality-heading {
         flex-direction: column;
         align-items: flex-start;
+        justify-content: center;
+        
+    }
+    .bh__functionality-heading h1{
         margin-bottom: 0rem;
     }
-
-    .bh__functionality-heading p {
-        margin-top: 1rem;
+    /*getting rid of margin on phones*/
+    .section_margin{
+        margin:0;
     }
+    
+    .bh__functionality-container{
+        justify-content: center;
+    }
+    .bh__functionality-feature{
+        justify-content: center;
+    }
+    
 }
 
 @media screen and (max-width: 650px) {

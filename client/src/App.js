@@ -1,7 +1,7 @@
 import './App.css';
 import React, {useEffect, useState} from 'react'
-import {Footer, Blog, Possibility, Features, Functionality, Header} from './containers'
-import {Button, CTA, Brand, Navbar} from './components'
+import {Footer, Blog, Possibility, GetStarted, Functionality, Header} from './containers'
+import {Button, CTA, Brand, Navbar, Form} from './components'
 const App = () => {
   return(
     <div className = "App">
@@ -13,7 +13,7 @@ const App = () => {
       </div>
       <Brand/>
       <Functionality/>
-      <Features/>
+      <GetStarted/>
       <Possibility/>
       <CTA/>
       <Blog/>
