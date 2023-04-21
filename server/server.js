@@ -1,23 +1,21 @@
 const express = require('express');
-const bodyParser = require('body-parser');
 const app = express();
+const bodyParser = require('body-parser');
 
-// create a variable to store the number of votes
-let voteCount = 0;
-
-// parse application/json
+app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-// create an endpoint to get the vote count
-app.get('/api', (req, res) => {
-    res.json({ votes: voteCount });
+let user_age = "";
+let user_gender = "";
+/*takes in the users age and gender */
+app.post('/submit-form', (req, res) => {
+  const {age, gender} = req.body;
+  user_age = age; 
+  user_gender = gender;
+  // Do something with the data (e.g. save it to a database)
+  //console.log(user_age);
+  res.json({ message: 'Data received' });
 });
 
-// create an endpoint to handle the vote button click
-app.post('/api', (req, res) => {
-  // increment the vote count
-  voteCount++;
-  res.json({ votes: voteCount });
-});
 
 app.listen(5000, () => console.log(`Server started on port 5000`));
