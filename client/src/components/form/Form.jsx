@@ -1,6 +1,7 @@
 import { useState } from "react";
 import './form.css'
 import {Header} from '../../containers'
+import {Topvote} from '../../containers' //to be implemented
 function Form() {
     const [age, setAge] = useState("");
     const [gender, setGender] = useState("");
@@ -18,7 +19,7 @@ function Form() {
         event.preventDefault();
 
         // Check if required fields are filled out
-        if (age.trim() === "" || gender.trim() === "") {
+        if (age.trim() === "" || age.trim() === "--Select Year--"|| gender.trim() === "" || gender.trim()==="--Select Gender--") {
             alert("Please fill out all fields");
             return;
         }
@@ -70,7 +71,7 @@ function Form() {
     return (
         <div>
             <h1 id= "thankyou">Thank you for submitting the form! You may now view the Top Charts and Cast a Vote</h1>;
-            <Header/>
+            <Topvote/>
         </div>
     )
   }

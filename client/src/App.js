@@ -1,7 +1,7 @@
 import './App.css';
 import React, {useEffect, useState} from 'react'
-import {Footer, Blog, Possibility, GetStarted, Functionality, Header} from './containers'
-import {Button, CTA, Brand, Navbar, Form} from './components'
+import {Footer, Blog, Possibility, GetStarted, Functionality, Header, Topvote} from './containers'
+import {Button, CTA, Brand, Navbar, Form, Vote} from './components'
 const App = () => {
   return(
     <div className = "App">
