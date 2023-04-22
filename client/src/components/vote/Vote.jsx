@@ -39,16 +39,24 @@ function Vote(){
         setSubmitted(true);
     };
     //need to change above
+    //citybar,irish pub, monday's, brats
     if(!submitted){
         return(
             <form onSubmit={handleSubmit} className = "bh__vote">
                 <label htmlFor="bar">Vote for a Bar: </label>
                     <select id="bar" name="bar" value={bar} onChange={handleBarChange} required>
                         <option value="">-- Select Bar -- </option>
-                        <option value="fourthyear">2023</option>
-                        <option value="thirdyear">2024</option>
-                        <option value="secondyear">2025</option>
-                        <option value="firstyear">2026</option>
+                        <option value="RedShed">Red Shed</option>
+                        <option value="Luckys">Lucky's</option>
+                        <option value="Wandos">Wandos</option>
+                        <option value="Chasers">Chasers</option>
+                        <option value="Dannys">Danny's</option>
+                        <option value="Sconnies">Sconnies</option>
+                        <option value="Jordans Big 10">Jordan's Big 10</option>
+                        <option value="Plaza">Plaza</option>
+                        <option value="Whiskey Jacks">Whiskey Jacks</option>
+                        <option value="DoubleU">DoubleU</option>
+                        
                     </select><br /><br />
                 <button type="submit">Submit</button>
             </form>
