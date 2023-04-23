@@ -93,4 +93,17 @@ app.post('/submit-vote', (req, res) => {
   res.json({ message: 'Vote received' });
 });
 
+//retrieves values form database to server
+//retrieving redshed
+app.get('/retrieve', (req, res) => {
+  pool.query(`SELECT BarName, population,Boys, Girls, Freshman, Sophomores, Juniors,Seniors FROM barstatus order by population desc`, (error, results, fields) => {
+    if (error) {
+      console.error(error);
+      res.status(500).json({ error: 'Internal server error' });
+      return;
+    }
+    res.json(results);
+  });
+});
+
 app.listen(5000, () => console.log(`Server started on port 5000`));

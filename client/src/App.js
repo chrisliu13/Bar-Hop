@@ -1,4 +1,5 @@
 import './App.css';
+import Chart from 'chart.js';
 import React, {useEffect, useState} from 'react'
 import {Footer, Blog, Possibility, GetStarted, Functionality, Header, Topvote} from './containers'
 import {Button, CTA, Brand, Navbar, Form, Vote} from './components'

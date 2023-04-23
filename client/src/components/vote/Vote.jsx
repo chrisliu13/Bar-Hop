@@ -65,7 +65,7 @@ function Vote(){
     else{
         return (
             <div>
-                <h1 id= "thankyou">Vote Received</h1>;
+                <h1 id= "thankyou">Vote Received</h1>
             </div>
         )
       }
