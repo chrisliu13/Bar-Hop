@@ -5,3 +5,16 @@
     padding: 2rem;
     background-color: black;
 }
+.topcharts{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: bisque;
+    margin-top: 2rem;
+}
+.spec{
+    text-align: center;
+    color: bisque;
+    margin-top: 0.5rem;
+    font-weight: 50;
+}
