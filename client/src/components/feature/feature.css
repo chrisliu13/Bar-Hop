@@ -12,6 +12,10 @@
     max-width: 250px;
     margin-right: 2rem;
 }
+.drop{
+    position: relative;
+    top: 13px;
+}
 
 .bh__feature-container__feature-title h1{
     font-family: var(--font-family);
@@ -49,6 +53,7 @@
     .bh__feature-container__feature-title h1{
         font-size: 14px;
         line-height: 22px;
+        font-weight:bolder;
     }
     .bh__feature-container__feature-title p{
         font-size: 12px;
@@ -59,8 +64,8 @@
     }
     /*allowing scroll feature for mobile phones*/
     .bh__feature-container__feature-text p{
-        height:200px; /*temporary may need to change*/
-        width:170px; /*temporary may need to change*/
+        height:250px; /*temporary may need to change*/
+        width:200px; /*temporary may need to change*/
         overflow-x: hidden;
         overflow-y: auto; /*temporary may need to change*/
     }

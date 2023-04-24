@@ -78,7 +78,14 @@ app.post('/submit-vote', (req, res) => {
     user_vote = "Whiskey Jacks";
   } else if (user_vote_temp === "DoubleU") {
     user_vote = "DoubleU";
-  }else{
+  }else if (user_vote_temp === "City Bar") {
+    user_vote = "City Bar";
+  }else if (user_vote_temp === "Irish Pub") {
+    user_vote = "Irish Pub";
+  }else if (user_vote_temp === "Brats") {
+    user_vote = "Brats";
+  }
+  else{
     throw new Exception("PROCESSING ISSUE");
   }
   /*preparing query*/
@@ -94,7 +101,7 @@ app.post('/submit-vote', (req, res) => {
 });
 
 //retrieves values form database to server
-//retrieving redshed
+//retrieving based on most popular
 app.get('/retrieve', (req, res) => {
   pool.query(`SELECT BarName, population,Boys, Girls, Freshman, Sophomores, Juniors,Seniors FROM barstatus order by population desc`, (error, results, fields) => {
     if (error) {

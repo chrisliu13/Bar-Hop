@@ -6,3 +6,4 @@ export {default as Navbar} from './navbar/Navbar'
 export {default as Button} from "./Button.jsx"
 export {default as Form} from "./form/Form"
 export {default as Vote} from "./vote/Vote"
+export {default as IndividualRank} from "./individualRank/IndividualRank"

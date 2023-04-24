@@ -11,10 +11,12 @@ const Ranking = () => {
         .catch(error => console.error(error));
     }, []);
 
-  //TODO: implement ordering system
   return (
-    <div>
-        <pre>{JSON.stringify(stats[0],null,2)}</pre>
+    //maps out each unique bar, but only top 10
+    <div id = "vote">
+        {stats.slice(0, 10).map((bar,index)=>(
+            <IndividualRank barName = {bar.BarName} rank = {index+1} boys= {bar.Boys} girls = {bar.Girls} fresh ={bar.Freshman} soph = {bar.Sophomores} juni = {bar.Juniors} population = {bar.population}/>
+        ))}
     </div>
   )
 }

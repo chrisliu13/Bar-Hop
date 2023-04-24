@@ -56,6 +56,9 @@ function Vote(){
                         <option value="Plaza">Plaza</option>
                         <option value="Whiskey Jacks">Whiskey Jacks</option>
                         <option value="DoubleU">DoubleU</option>
+                        <option value="City Bar">City Bar</option>
+                        <option value="Irish Pub">Irish Pub</option>
+                        <option value="Brats">Brats</option>
                         
                     </select><br /><br />
                 <button type="submit">Submit</button>

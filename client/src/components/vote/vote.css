@@ -2,6 +2,9 @@
     max-width: 500px;
     border: 2px solid #ffffff;
     padding: 2rem;
+    justify-content: center;
+    align-items: center;
+    flex:center;
 }
 .bh__vote label{
     font-family: var(--font-family);

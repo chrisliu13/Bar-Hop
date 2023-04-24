@@ -1,7 +1,9 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './functionality.css'
 import {Feature} from '../../components'
+import badgeratbar from '../../assets/badgeratbar.png'
 const Functionality = () => {
+  const [toggleMenu, setToggleMenu] = useState(false);
   return (
     <div className="bh__functionality section_margin" id = "functions">
       <div className = "bh__functionality-feature">
@@ -17,6 +19,7 @@ const Functionality = () => {
         <Feature title = "Top Charts" text = "Top Charts display, based on your votes, the top ten most active bars of the night, along with the ratio and general age distribution."/>
         <Feature title = "Vote" text = "After getting a glance at the Top Charts, use your new knowledge to make a maximum of two votes on the bars you anticipate on going to tonight. Maybe you want to add on to the fire of the hottest bar or you prefer a more low-key bar; either way, your voice will be heard."/>
       </div>
+      
     </div>
   )
 }
