@@ -8,7 +8,7 @@ function Vote(){
     const handleBarChange = (event) => {
         setBar(event.target.value);
     };
-
+    
     //need to change handlesubmit function
     const handleSubmit = async (event) => {
         event.preventDefault();

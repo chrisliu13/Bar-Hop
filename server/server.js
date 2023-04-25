@@ -93,7 +93,7 @@ app.post('/submit-vote', (req, res) => {
   pool.query(query, (err, rows) =>{
     if(err){
       console.log(err);
-    }else{
+    }else{  
       console.log(rows);
     }
   });
@@ -112,5 +112,15 @@ app.get('/retrieve', (req, res) => {
     res.json(results);
   });
 });
+
+//resets the votes after 24 hours
+// Reset values in database every 24 hours
+//should reset everyday at 2:30 CT
+setInterval(() => {
+  // Your code to reset values in database goes here
+  pool.query(`UPDATE barstatus SET population = 0, Boys = 0, Girls = 0, Freshman = 0, Sophomores = 0, Juniors = 0, Seniors = 0 `, (err, result) => {    if (err) throw err;
+    console.log('Values reset successfully');
+  });
+}, 24 * 60 * 60 * 1000); // 24 hours in milliseconds
 
 app.listen(5000, () => console.log(`Server started on port 5000`));
