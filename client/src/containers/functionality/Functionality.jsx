@@ -7,7 +7,7 @@ const Functionality = () => {
   return (
     <div className="bh__functionality section_margin" id = "functions">
       <div className = "bh__functionality-feature">
-        <Feature title = "What exactly is Bar Hop?" text = "Bar Hop is an online platform where students can vote on which bar they plan on going to every night. With more students entering data, the status of each bar can be crowd-soured into one location: revealing the head count, guy/girl ratio, and grade levels. This website was brought into fruition when a group of friends realized the bipolarity of bars, often entering venues too stuffy, empty, or of the wrong crowd. But with the introduction to Bar Hop, all those problems faded away as they got a glimpse of the night before stepping out the pregame."/>
+        <Feature title = "What exactly is Bar Hop?" text = "Bar Hop is an online platform where students can vote on which bar they plan on going to every night. With more students entering data, the status of each bar can be crowd-soured into one location: revealing the population, guy/girl ratio, and grade levels. This website was brought into fruition when a group of friends realized the bipolarity of bars, often entering venues too stuffy or empty. But with the introduction to Bar Hop, all those problems faded away as they got a glimpse of the night before stepping out the pregame."/>
       </div>
       <div className = "bh__functionality-heading">
         <h1 className = "gradient__text">

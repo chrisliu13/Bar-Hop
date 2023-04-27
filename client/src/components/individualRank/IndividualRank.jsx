@@ -1,6 +1,6 @@
 import React from 'react'
 import './individualrank.css'
-import {Bar, Pie} from 'react-chartjs-2'
+import {Bar, Pie, Doughnut} from 'react-chartjs-2'
 import {Chart as ChartJS} from 'chart.js/auto'
 //this class represents each individual bar that will be 
 //assesed in the overall "ranking" component
@@ -51,7 +51,7 @@ const IndividualRank = ({barName, rank, boys, girls, fresh, soph, juni, seni, po
                     />
                 </div>
                 <div className = "housingbar">
-                    <Pie
+                    <Doughnut
                         data = {
                             {labels: ["Freshman", "Sophomores", "Juniors", "Seniors"],
                             datasets:[

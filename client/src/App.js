@@ -1,8 +1,7 @@
 import './App.css';
-import Chart from 'chart.js';
-import React, {useEffect, useState} from 'react'
-import {Footer, Blog, Possibility, GetStarted, Functionality, Header, Topvote} from './containers'
-import {Button, CTA, Brand, Navbar, Form, Vote} from './components'
+import React from 'react'
+import {Footer,GetStarted,Functionality, Header} from './containers'
+import {Brand, Navbar} from './components'
 const App = () => {
   return(
     <div className = "App">
@@ -15,9 +14,6 @@ const App = () => {
       <Brand/>
       <Functionality/>
       <GetStarted/>
-      <Possibility/>
-      <CTA/>
-      <Blog/>
       <Footer/>
     </div>
   )

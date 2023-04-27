@@ -1,0 +1,138 @@
+.bh__footer{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-footer);
+}
+.bh__footer-heading{
+    width:100%;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.bh__footer-heading h1{
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 800;
+    font-size: 62px;
+    line-height: 75px;
+    text-align: center;
+    letter-spacing: -0.04em;
+}
+.bh__footer-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border: 1px solid #fff;
+    text-align: center;
+    margin-bottom: 8rem;
+    cursor:pointer;
+}
+.bh__footer-btn a{
+    box-sizing: border-box;
+    font-family: var(--font-family);
+    font-size: 18px;
+    line-height: 21px;
+    word-spacing: 2px;
+    color:#fff
+}
+.bh__footer-links{
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width:100%;
+    text-align: left;
+}
+.bh__footer-links div{
+    width:200px;
+    margin:1rem;
+}
+.bh__footer-links_logo{
+    display:flex;
+    flex-direction: column;
+
+}
+.bh__footer-links_logo img{
+    width:118px;
+    height:50px;
+    margin-bottom: 1rem;
+}
+.bh__footer-links_logo a{
+    font-family: var(--font-family);
+    font-size: 12px;
+    line-height: 14px;
+    color:#fff;
+}
+.bh__footer-links_div{
+    display:flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.bh__footer-links_div h4{
+    font-family: var(--font-family);
+    font-size: 14px;
+    line-height: 16px;
+    color:white;
+    margin-bottom: 1rem;
+    /* identical to box height */
+}
+.bh__footer-links_div p {
+    font-family: var(--font-family);
+    font-size: 12px;
+    line-height: 14px;
+
+    color: #FFFFFF;
+    margin: 0.5rem 0;
+    cursor:pointer;
+}
+.bh__footer-links_div a {
+    font-family: var(--font-family);
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFFFFF;
+    margin: 0.5rem 0;
+    cursor:pointer;
+}
+.socials a{
+    margin-right: 0.25rem;
+}
+.socials{
+    position: relative;
+    left: -18px; /* adjust the value as needed */
+}
+.bh__footer-copyright{
+    margin-top: 2rem;
+    text-align: center;
+    width: 100%;
+}
+.bh__footer-copyright p{
+    font-family: var(--font-family);
+    font-size: 12px;
+    line-height: 14px;
+    font-feature-settings: 'liga' off;
+
+    color: #FFFFFF;
+}
+@media screen and (max-width:850px){
+    .bh__footer-heading h1{
+        font-size: 44px;
+        line-height:50px;
+    }
+}
+@media screen and (max-width:550px){
+    .bh__footer-heading h1{
+        font-size: 34px;
+        line-height:42px;
+    }
+    .bh__footer-heading p{
+        font-size: 14px;
+        line-height:20px;
+    }
+    .bh__footer-links div{
+        margin:1rem 0;
+
+    }
+}
